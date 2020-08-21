@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
       </header>
+    </div>
+  );
+}
+
+function Person() {
+  const personStyle = {
+    border: "2px solid red",
+    margin: "10px",
+  };
+
+  return (
+    <div style={personStyle}>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+        dicta, iusto quisquam ea numquam accusamus deserunt voluptatum quo
+        nesciunt cum ullam rem perferendis quod necessitatibus quam molestiae,
+        tenetur quis! Debitis.
+      </p>
     </div>
   );
 }
